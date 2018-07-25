@@ -1,0 +1,5 @@
+1. first create a service account with owner access and download account.json
+2. export GOOGLE__APPLICATION_CREDENTIALS=account.json
+3. Create bucket manually before terraform init 
+4. terraform init --backend-config=backend.hcl
+

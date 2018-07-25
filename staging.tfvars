@@ -1,0 +1,12 @@
+k8s_version           = "1.10"
+startup_script        = "templates/provision-bastion.sh"
+project               = "dummy"
+region                = "us-central1"
+k8s_cluster           = "staging"
+k8s_cluster_zone      = "us-central1-a"
+master_auth_username  = "admin"
+master_auth_password  = "admin"
+gce_ssh_user          = "mayur"
+gce_ssh_pub_key_file  = "templates/bastion.pub"
+k8s_node_machine_type = "n1-highcpu-2"
+

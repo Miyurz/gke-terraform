@@ -1,0 +1,24 @@
+output "Internal_IP" {
+  value = "${google_compute_instance.bastion.network_interface.0.address}"
+	description = "The internal ip address of the instance, either manually or dynamically assigned."
+}
+
+output "instance_id" {
+  value       = "${google_compute_instance.bastion.name}"
+  description = "The server-assigned unique identifier of this instance."
+}
+
+output "metadata_fingerprint" {
+  value       = "${google_compute_instance.bastion.metadata_fingerprint}"
+  description = "The unique fingerprint of the metadata."
+}
+
+output "self_link " {
+  value       = "${google_compute_instance.bastion.self_link}"
+  description = "The URL of the created instance"
+}
+
+output "External_IP" {
+  value       = "${google_compute_instance.bastion.network_interface.0.access_config.0.assigned_nat_ip}"
+	description = "External IP of the bastion server"
+} 
